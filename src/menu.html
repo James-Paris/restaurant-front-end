@@ -3,11 +3,256 @@
 <head>
     <title>Ming's Menu</title>
     <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<style>
+		
+		hr.stylish {
+			border: 0;
+			height: 1px;
+			background: #333;
+			background-image: linear-gradient(to right, #ccc, #333, #ccc);
+		}
+	
+		#enticingimage {
+			height: 272px;
+			background-image: url("../assets/img/chinese-borderV2.png");
+			background-repeat: repeat-x;
+		}
+		
+		#menuContainer {
+			padding: 1rem;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 1rem;
+		}
+		
+		.menu-item-container {
+			border-style: solid double;
+			border-color: rgb(189,189,189);
+			padding: 15px;
+			
+		}
+		
+		.menu-item {
+			display: flex;
+			justify-content: space-between;
+			margin: 5px;
+		}
+		
+		.menu-header {
+			font-size: 20px;
+			text-decoration: underline;
+		}
+		
+		.menu-catagory {
+			margin: 0;
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		
+		#theFoot {
+			text-align: right;
+			padding-bottom: 4px;
+			padding-right: 8px;
+			vertical-align: text-bottom;
+		}
+	
+	</style>
+
 </head>
 
-<body>
+<body class="bg-dark text-light d-flex flex-column min-vh-100">
+
+<!--Nav bar-->
+<nav class="navbar navbar-dark bg-dark navbar-expand-md">
+	<div class="navbar-nav">
+		<a class="nav-item nav-link active" href="index.html">Home</a>
+		<a class="nav-item nav-link" href="menu.html">Our Menu</a>
+		<a class="nav-item nav-link" href="contactus.html">Contact Us</a>
+	</div>
+</nav>
+
+<div id="enticingimage">
+	
+</div>
+<br><br><h3><center>Ming's Menu:</center></h3>
+<div id="menuContainer">
+	<div class="menu-item-container">
+		<div class="text-center menu-header">APPETIZERS</div>
+		<div class="menu-item">
+			<p>Egg Roll (1)</p>
+			<p>$1.25</p>
+		</div>
+		<div class="menu-item">
+			<p>Shrimp Egg Roll(1)</p>
+			<p>$1.35</p>
+		</div>
+		<div class="menu-item">
+			<p>Fried Jumbo Shrimp (5)</p>
+			<p>$4.95</p>
+		</div>
+		<div class="menu-item">
+			<p>Fried Chicken Wings (8)</p>
+			<p>$5.25</p>
+		</div>
+		
+		<div class="menu-item">
+			<p>Fried Crabmeat Rangoons (8)</p>
+			<p>$4.35</p>
+		</div>
+		<div class="menu-item">
+			<p>Fried Chicken Fingers (8)</p>
+			<p>$3.75</p>
+		</div>
+		<div class="menu-item">
+			<p>Chicken On A Stick (4)</p>
+			<p>$4.75</p>
+		</div>
+	</div>
+
+	<div class="menu-item-container">
+		<div class="text-center menu-header">FRIED RICE</div>
+		<div class="menu-item">
+			<p>Roast Pork Fried Rice</p>
+			<p>$4.25</p>
+		</div>
+		<div class="menu-item">
+			<p>Chicken Fried Rice</p>
+			<p>$4.25</p>
+		</div>
+		<div class="menu-item">
+			<p>Shrimp Fried Rice</p>
+			<p>$4.55</p>
+		</div>
+		<div class="menu-item">
+			<p>Beef Fried Rice</p>
+			<p>$4.55</p>
+		</div>
+		<div class="menu-item">
+			<p>Vegetable Fried Rice</p>
+			<p>$3.95</p>
+		</div>
+		<div class="menu-item">
+			<p>Egg Fried Rice</p>
+			<p>$3.95</p>
+		</div>
+	</div>
+	
+	<div class="menu-item-container">
+		<div class="text-center menu-header">LO MEIN</div>
+		<div class="menu-item">
+			<p>Roast Pork Lo Mein</p>
+			<p>$4.75</p>
+		</div>
+		<div class="menu-item">
+			<p>Chicken Lo Mein</p>
+			<p>$4.75</p>
+		</div>
+		<div class="menu-item">
+			<p>Shrimp Lo Mein</p>
+			<p>$5.25</p>
+		</div>
+		<div class="menu-item">
+			<p>Vegetable Lo Mein</p>
+			<p>$4.25</p>
+		</div>
+		<div class="menu-item">
+			<p>House Special Lo Mein</p>
+			<p>$5.35</p>
+		</div>
+	</div>
+	
+	<div class="menu-item-container">
+		<div class="text-center menu-header">CHOW MEIN OR CHOP SUEY</div>
+		<div class="menu-item">
+			<p>Chicken or Roast Pork Chow Mein</p>
+			<p>$5.50</p>
+		</div>
+		<div class="menu-item">
+			<p>Beef or Shrimp Chow Mein</p>
+			<p>$5.75</p>
+		</div>
+		<div class="menu-item">
+			<p>Vegetable Chow Mein</p>
+			<p>$4.35</p>
+		</div>
+		
+	</div>
+	
+	<div class="menu-item-container">
+		<div class="text-center menu-header">SWEET & SOUR</div>
+		<div class="menu-item">
+			<p>Sweet & Sour Pork</p>
+			<p>$7.75</p>
+		</div>
+		<div class="menu-item">
+			<p>Sweet & Sour Chicken</p>
+			<p>$7.75</p>
+		</div>
+		<div class="menu-item">
+			<p>Sweet & Sour Shrimp</p>
+			<p>$7.95</p>
+		</div>
+		<div class="menu-item">
+			<p>Sweet & Sour Triple</p>
+			<p>$7.95</p>
+		</div>
+	</div>
+	
+	<div class="menu-item-container">
+		<div class="text-center menu-header">DIET MENU</div>
+		<div class="menu-item">
+			<p>Steamed Mixed Vegetables</p>
+			<p>$5.95</p>
+		</div>
+		<div class="menu-item">
+			<p>Steamed White Meat Chicken W/ Broccoli</p>
+			<p>$7.75</p>
+		</div>
+		<div class="menu-item">
+			<p>Steamed Chicken W/ Mixed Vegetables</p>
+			<p>$7.75</p>
+		</div>
+		<div class="menu-item">
+			<p>Steamed Bean Curd W/ Broccoli</p>
+			<p>$6.25</p>
+		</div>
+	</div>
+	
+	<div class="menu-item-container">
+		<div class="text-center menu-header">SIDE ORDERS</div>
+		<div class="menu-item">
+			<p>Extra White Rice</p>
+			<p>$1.50</p>
+		</div>
+		<div class="menu-item">
+			<p>Fried Noodles</p>
+			<p>$0.75</p>
+		</div>
+		<div class="menu-item">
+			<p>Fortune Cookies (5)</p>
+			<p>$0.75</p>
+		</div>
+	</div>
+	
+</div>
+
+
+
+<footer class="page-footer">
+	<div class="footer-copyright" id="theFoot">
+		This website was designed by James © 2021 Copyright: <a href="#">Ming's Diner</a>
+	</div>
+</footer>
+
+
+<!-- CTA button -->
+
+
 </body>
 
 </html>

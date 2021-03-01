@@ -5,9 +5,117 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<style>
+		#enticingimage {
+			height: 272px;
+			width: 100%;
+			background-image: url("../assets/img/chinese-borderV2.png");
+			background-repeat: repeat-x;
+		}
+		
+		#mainContent {
+			padding: 15px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+		}
+		
+		#myForm {
+			padding: 15px;
+		}
+		
+		#theFoot {
+			text-align: right;
+			padding-bottom: 4px;
+			padding-right: 8px;
+			vertical-align: text-bottom;
+		}
+		
+		.card {	
+			border:thin black solid;
+			background-color:#565753;
+			opacity: 0.85;
+		}
+		
+	</style>
 </head>
 
-<body>
+<body class="bg-dark text-light d-flex flex-column">
+
+<!--Nav bar-->
+<nav class="navbar navbar-dark bg-dark navbar-expand-md">
+	<div class="navbar-nav">
+		<a class="nav-item nav-link active" href="index.html">Home</a>
+		<a class="nav-item nav-link" href="menu.html">Our Menu</a>
+		<a class="nav-item nav-link" href="contactus.html">Contact Us</a>
+	</div>
+</nav>
+
+<div id="enticingimage">
+	
+</div>
+
+<div id="mainContent">
+
+	<div>
+	<br>
+	<h3>Lorem Ipsum</h3>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<br><br>
+	<h4>Lorem Ipsum</h4>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	</div>
+	
+
+	
+	<div class="contact-form col-md-15" id="myForm" style="align-right">
+		<form class="w-50 my-3 p-3 card">
+			<h1>Contact us</h1>
+			<div class="form-group">
+				<label>Name:</label>
+				<input type="text" placeholder="Your Name:" class="form-control">
+			</div>
+			
+			<div class="form-group">
+				<label>Email:</label>
+				<input type="email" placeholder="Your E-mail:" class="form-control">
+			</div>
+			
+			<div class="form-group">
+				<label>Concern:</label>
+				<textarea class="form-control" placeholder="Enter comments or concerns here..."></textarea>
+			</div>
+			<button id="formSubmission" type="submit" class="btn btn-primary">Submit</button>
+			<script>
+			   $("#formSubmission").click(function() {
+				  alert("The Form has been Submitted. We will contact you shortly.");
+			   });
+			</script>
+		</form>
+	</div>
+</div>
+
+
+<footer class="page-footer">
+	<div class="footer-copyright" id="theFoot">
+	<br><br>
+		This website was designed by James © 2021 Copyright: <a href="#">Ming's Diner</a>
+	</div>
+</footer>
+
+
+<!-- CTA button -->
+
+
 </body>
 
 </html>
